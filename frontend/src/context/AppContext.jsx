@@ -5,7 +5,7 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
+    const backendUrl ='https://taskflow-v3-fixed.onrender.com'
 
     const [token, setToken] = useState(localStorage.getItem('token') || '')
     const [user, setUser] = useState(null)
