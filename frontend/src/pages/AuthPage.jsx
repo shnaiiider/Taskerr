@@ -232,7 +232,90 @@ export default function AuthPage() {
               </div>
             ))}
           </div>
+     
         </div>
+             {/* footer */}
+<div
+  style={{
+    marginTop: 18,
+    background: '#111',
+    border: '1px solid #1e1e1e',
+    borderRadius: 10,
+    padding: '18px 22px',
+    transition: 'all 0.25s ease',
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.border = `1px solid ${Y}`
+    e.currentTarget.style.boxShadow = `0 0 20px ${Y}22`
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.border = '1px solid #1e1e1e'
+    e.currentTarget.style.boxShadow = 'none'
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      gap: 16,
+    }}
+  >
+    <div>
+  
+
+      <div style={{ fontSize: 15, fontWeight: 700 }}>
+        Made by <span style={{ color: Y }}>Sajal Chandhoke </span>
+      </div>
+
+    </div>
+
+    <div
+      style={{
+        display: 'flex',
+        gap: 10,
+        flexWrap: 'wrap',
+      }}
+    >
+      <a
+        href="https://github.com/shnaiiider"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          textDecoration: 'none',
+          color: '#fff',
+          background: '#0a0a0a',
+          border: '1px solid #222',
+          borderRadius: 8,
+          padding: '10px 14px',
+          fontSize: 12,
+          fontWeight: 600,
+        }}
+      >
+        GitHub →
+      </a>
+
+      <a
+        href="https://linkedin.com/in/sajal-chandhoke-1086b4302"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          textDecoration: 'none',
+          color: '#fff',
+          background: '#0a0a0a',
+          border: '1px solid #222',
+          borderRadius: 8,
+          padding: '10px 14px',
+          fontSize: 12,
+          fontWeight: 600,
+        }}
+      >
+        LinkedIn →
+      </a>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   )
